@@ -1,4 +1,19 @@
 <resources>
-    <string name="app_name">LGSoundBoard</string>
+    <string name="app_name">Liam Gallagher Soundboard</string>
     <string name="action_settings">Settings</string>
+    <string name="sound1_btn">Sound1</string>
+    <string name="sound2_btn">Sound2</string>
+    <string name="sound3_btn">Sound3</string>
+    <string name="sound4_btn">Sound4</string>
+    <string name="sound5_btn">Sound5</string>
+    <string name="sound6_btn">Sound6</string>
+    <string name="sound7_btn">Sound7</string>
+    <string name="sound8_btn">Sound8</string>
+    <string name="sound9_btn">Sound9</string>
+    <string name="main_label">Select a soundclip</string>
+    <string name="sound10_btn">Button</string>
+    <string name="sound12_btn">Button</string>
+    <string name="sound11_btn">Button</string>
+    <string name="sound13_btn">Button</string>
+    <string name="sound14_btn">Button</string>
 </resources>
