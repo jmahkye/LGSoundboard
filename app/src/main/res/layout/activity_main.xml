@@ -1,194 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/sound9_btn"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="46dp"
-            android:layout_marginRight="46dp"
-            android:text="@string/sound9_btn"
-            android:visibility="visible"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sound6_btn" />
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/sound3_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="88dp"
-            android:layout_marginEnd="46dp"
-            android:layout_marginRight="46dp"
-            android:text="@string/sound3_btn"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
 
-        <Button
-            android:id="@+id/sound5_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="33dp"
-            android:layout_marginEnd="13dp"
-            android:layout_marginRight="13dp"
-            android:text="@string/sound5_btn"
-            app:layout_constraintEnd_toStartOf="@+id/sound6_btn"
-            app:layout_constraintStart_toEndOf="@+id/sound4_btn"
-            app:layout_constraintTop_toBottomOf="@+id/sound2_btn" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="1000dp">
 
-        <Button
-            android:id="@+id/sound7_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_marginStart="19dp"
-            android:layout_marginLeft="19dp"
-            android:layout_marginTop="41dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginRight="24dp"
-            android:text="@string/sound7_btn"
-            app:layout_constraintEnd_toStartOf="@+id/sound9_btn"
-            app:layout_constraintStart_toEndOf="@+id/sound8_btn"
-            app:layout_constraintTop_toBottomOf="@+id/sound5_btn" />
+                <TextView
+                    android:id="@+id/titleView"
+                    android:layout_width="162dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="125dp"
+                    android:text="@string/main_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/sound1_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="47dp"
-            android:layout_marginLeft="47dp"
-            android:layout_marginTop="88dp"
-            android:text="@string/sound1_btn"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/sound1_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/sound1_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sound17_btn" />
 
-        <Button
-            android:id="@+id/sound2_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="26dp"
-            android:layout_marginLeft="26dp"
-            android:layout_marginTop="31dp"
-            android:layout_marginEnd="28dp"
-            android:layout_marginRight="28dp"
-            android:text="@string/sound2_btn"
-            app:layout_constraintEnd_toStartOf="@+id/sound3_btn"
-            app:layout_constraintStart_toEndOf="@+id/sound1_btn"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+                <Button
+                    android:id="@+id/sound2_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/sound2_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sound9_btn" />
 
-        <Button
-            android:id="@+id/sound4_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="47dp"
-            android:layout_marginLeft="47dp"
-            android:layout_marginTop="33dp"
-            android:text="@string/sound4_btn"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sound1_btn" />
+                <Button
+                    android:id="@+id/sound3_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/sound3_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sound14_btn" />
 
-        <Button
-            android:id="@+id/sound6_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="33dp"
-            android:layout_marginEnd="57dp"
-            android:layout_marginRight="57dp"
-            android:text="@string/sound6_btn"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sound3_btn" />
+                <Button
+                    android:id="@+id/sound4_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/sound4_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sound1_btn" />
 
-        <Button
-            android:id="@+id/sound8_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="58dp"
-            android:layout_marginLeft="58dp"
-            android:layout_marginTop="41dp"
-            android:text="@string/sound8_btn"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sound4_btn" />
+                <Button
+                    android:id="@+id/sound5_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/sound5_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sound8_btn" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="120dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="150dp"
-            android:layout_marginLeft="150dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="150dp"
-            android:layout_marginRight="150dp"
-            android:text="@string/main_label"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/sound6_btn"
+                    android:layout_width="147dp"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/sound6_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sound11_btn" />
 
-        <Button
-            android:id="@+id/sound10_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="40dp"
-            android:text="@string/sound10_btn"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sound8_btn" />
+                <Button
+                    android:id="@+id/sound7_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/sound7_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sound13_btn" />
 
-        <Button
-            android:id="@+id/sound12_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="49dp"
-            android:layout_marginEnd="38dp"
-            android:layout_marginRight="38dp"
-            android:text="@string/sound12_btn"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sound9_btn" />
+                <Button
+                    android:id="@+id/sound8_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/sound8_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sound3_btn" />
 
-        <Button
-            android:id="@+id/sound11_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:layout_marginLeft="28dp"
-            android:layout_marginTop="37dp"
-            android:layout_marginEnd="41dp"
-            android:layout_marginRight="41dp"
-            android:text="@string/sound11_btn"
-            app:layout_constraintEnd_toStartOf="@+id/sound12_btn"
-            app:layout_constraintStart_toEndOf="@+id/sound10_btn"
-            app:layout_constraintTop_toBottomOf="@+id/sound7_btn" />
+                <Button
+                    android:id="@+id/sound9_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/sound9_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sound10_btn" />
 
-        <Button
-            android:id="@+id/sound13_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="42dp"
-            android:layout_marginLeft="42dp"
-            android:layout_marginTop="43dp"
-            android:text="@string/sound13_btn"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sound10_btn" />
+                <Button
+                    android:id="@+id/sound10_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/sound10_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sound16_btn" />
 
-        <Button
-            android:id="@+id/sound14_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="58dp"
-            android:layout_marginEnd="39dp"
-            android:layout_marginRight="39dp"
-            android:text="@string/sound14_btn"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sound12_btn" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+                <Button
+                    android:id="@+id/sound11_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/sound11_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sound7_btn" />
+
+                <Button
+                    android:id="@+id/sound12_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/sound12_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sound5_btn" />
+
+                <Button
+                    android:id="@+id/sound13_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/sound13_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/sound14_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="68dp"
+                    android:text="@string/sound14_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/sound15_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/sound15_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sound6_btn" />
+
+                <Button
+                    android:id="@+id/sound16_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/sound16_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sound12_btn" />
+
+                <Button
+                    android:id="@+id/sound17_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/sound17_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sound15_btn" />
+
+                <Button
+                    android:id="@+id/sound20_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/sound20_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sound4_btn" />
+
+                <Button
+                    android:id="@+id/sound18_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/sound18_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sound2_btn" />
+
+                <Button
+                    android:id="@+id/sound19_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/sound19_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sound20_btn" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--    <com.google.android.gms.ads.AdView-->
+<!--        android:id="@+id/adView"-->
+<!--        android:layout_width="411dp"-->
+<!--        android:layout_height="80dp"-->
+<!--&lt;!&ndash;        ads:adSize="BANNER"&ndash;&gt;-->
+<!--&lt;!&ndash;        ads:adUnitId="ca-app-pub-5234591008009724/6215154693"&ndash;&gt;-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
